@@ -1,0 +1,6 @@
+server:
+  port: 1301
+
+spring:
+  application:
+    name: hystixDashbord

@@ -1,0 +1,16 @@
+server:
+  port: 8001
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql:///study
+    username: root
+    password: 123456
+  application:
+    name: UserProvider01
+eureka:
+  client:
+    SERVICE-URL:
+      defaultZone: http://localhost:8091/eureka,http://localhost:8090/eureka
+mybatis:
+  type-aliases-package: com.offcn.mapper

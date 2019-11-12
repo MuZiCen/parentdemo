@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: configServer
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/MuZiCen/GitHub
+          search-paths: offcn/config-repo
+          username: MuZiCen
+          password: zcljsw1220.

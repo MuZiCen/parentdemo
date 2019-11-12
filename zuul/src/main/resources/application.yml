@@ -1,0 +1,15 @@
+server:
+  port: 1996
+
+spring:
+  application:
+    name: ZuulDemo
+
+zuul:
+  routes:
+    userprovider:
+      path: /userprovider/**
+      url: http://localhost:8090/
+    userconsumer01:
+      path: /userconsumer01/**
+      service-id: USERCONSUMER
